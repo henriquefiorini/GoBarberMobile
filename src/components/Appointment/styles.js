@@ -9,6 +9,7 @@ export const Container = styled.View`
   padding: 16px;
   border-radius: 4px;
   background-color: white;
+  opacity: ${props => (props.isPast ? 0.6 : 1)};
 `;
 
 export const Left = styled.View`
@@ -40,4 +41,7 @@ export const Time = styled.Text`
   color: #999;
 `;
 
-export const ActionButton = styled.TouchableOpacity``;
+export const ActionButton = styled.TouchableOpacity`
+  align-items: center;
+  justify-content: center;
+`;
