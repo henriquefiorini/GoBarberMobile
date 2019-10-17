@@ -1,4 +1,4 @@
-import styled from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
 
 export const Container = styled.View`
   display: flex;
@@ -9,7 +9,7 @@ export const Container = styled.View`
   padding: 16px;
   border-radius: 4px;
   background-color: white;
-  opacity: ${props => (props.isPast ? 0.6 : 1)};
+  opacity: ${props => (props.isPast ? 0.5 : 1)};
 `;
 
 export const Left = styled.View`
@@ -30,15 +30,15 @@ export const Info = styled.View`
 `;
 
 export const Name = styled.Text`
-  color: #333;
+  color: rgba(0, 0, 0, 1);
   font-size: 16px;
   font-weight: 600;
 `;
 
 export const Time = styled.Text`
   margin-top: 4px;
+  color: rgba(0, 0, 0, 0.5);
   font-size: 13px;
-  color: #999;
 `;
 
 export const ActionButton = styled.TouchableOpacity`

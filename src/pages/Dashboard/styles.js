@@ -3,7 +3,8 @@ import { FlatList } from 'react-native';
 
 export const List = styled(FlatList).attrs({
   contentContainerStyle: {
-    padding: 24,
+    paddingRight: 24,
+    paddingLeft: 24,
   },
   showsVerticalScrollIndicator: false,
 })``;

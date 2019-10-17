@@ -6,7 +6,6 @@ import { StatusBar } from 'react-native';
 import '~/config/ReactotronConfig';
 
 import { Store, Persistor } from './store';
-import { Surface } from '~/components';
 import Routes from './routes';
 
 function App() {
@@ -14,9 +13,7 @@ function App() {
     <Provider store={Store}>
       <PersistGate persistor={Persistor}>
         <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
-        <Surface>
-          <Routes />
-        </Surface>
+        <Routes />
       </PersistGate>
     </Provider>
   );
